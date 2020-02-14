@@ -1,0 +1,29 @@
+
+.backgroundimage
+{
+	background-image: url("ghanabackground.jpg");
+	background-image-size: cover;
+	background-image-opacity: 0.8;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;   
+	
+}
+.heading1
+{
+	margin-left: 35%;
+
+}
+
+.heading1info
+{
+	margin-right: 65%;
+	font-size: 20;
+	text-align: center;
+	padding: 5px;
+	
+	
+}
