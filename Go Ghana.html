@@ -2,15 +2,69 @@
 
 <html>
 	
-	<head>
-		<script>
-	
-		var Day=document.getElementById ("DayOfBirth").onclick("Submit");
+<head>
+	<script>
+		//You Can Name a function by : "function [FunctionName](){}" 
+		function BirthDay()
 		{
-		alert(Day);
-		}
+			// Use the "document.getElementById("[idname]").value" in order to tell JavaScript where the element is on the HTML...//
+			//... File- usually detailed in the "id=[idName]" section of an element. Use the ".value" at the end to store the contents of an input element...//
+			//... Otherwise, the "document.getElementById" function will print out the name of the input element rather than its contents!//
+			
+			var dayofbirthinput = document.getElementById('DayOfBirth').value;
+			var monthinput = document.getElementById("MonthOfBirth").value - 1;
+			var yearinput = document.getElementById ("YearOfBirth").value;
+				alert("Confirm You were born on the " + dayofbirthinput + "of month "+ monthinput);
+				
+				CheckDay();
+				CheckMonth();
+				//Assign a variable to a function in order to store the function's return value
+				var datedetails = Main();
+				document.write(datedetails);
 		
-		</script>
+				function CheckDay()
+				{
+					var dayofbirthinput = document.getElementById("DayOfBirth").value;
+					
+					if (dayofbirthinput > 31 || (dayofbirthinput < 1))	
+							{
+					
+							alert("INVALID DAY OF BIRTH DETAILS, PLEASE REENTER");
+							
+							}
+				}
+			
+			
+				function CheckMonth()
+				{
+					var monthinput = document.getElementById("MonthOfBirth").value;
+					// Use the OR Operator ["||"] to add an additional condition to an if statement e.g if (age <18 || (age >25)){alert("too old")}
+					if (monthinput > 12 || (monthinput < 1))	
+							{
+					
+							alert("INVALID MONTH DETAILS, PLEASE REENTER");
+							
+							}
+
+				}
+
+				function Main()
+				{
+					
+					var FullDate = new Date();
+					FullDate.setDate(dayofbirthinput);
+					FullDate.setMonth(monthinput);
+					FullDate.setFullYear(yearinput);
+					alert (FullDate);
+					return FullDate;
+				}
+				
+		}		
+				
+				
+				
+	</script>
+		
 			<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 			<link href="goghana.css" rel="stylesheet" type="text/css">
 	
@@ -38,17 +92,23 @@
 					<option value="Female"> Female </option>
 					</select>
 				
-				<p> What Day Were You Born On? <input type="year" id="DayOfBirth" name="dayofbirthinput" size= "5" >
+				<p> What Day Were You Born On? <input type="year" id="DayOfBirth" name="dayofbirthinput" size= "5" > </input>
 				
 				
-				<p> What Month Were You Born in? <input type="year" id="MonthOfBirth" name="monthofbirthinput" size= "5" >
+				<p> What Month Were You Born in? <input type="year" id="MonthOfBirth" name="monthofbirthinput" size= "5" > </input>
 				
 				
-				<p> What Year Were You Born? <input type="year" id="YearOfBirth" name="yearofbirthinput" size= "5" >
+				<p> What Year Were You Born? <input type="year" id="YearOfBirth" name="yearofbirthinput" size= "5" > </input>
 				
-				<input type="button" id="Submit" name="SubmitButton" >
-	
+				<BR>
+				<!-- Calling a JavaScript function when a button is pressed: use "button onclick="[FunctionName]" with an appropriately named fuction in the-->
+				<!-- <script></script> section that contains your JavaScript code -->
+				<button type="button" button onclick ="BirthDay()" id="Submit1" name="SubmitButton1" size ="10"> Try </button>
+				
+				
+				
+				
 				</form>
-	
+				
 	
 			</div>
