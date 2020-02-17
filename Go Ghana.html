@@ -14,14 +14,17 @@
 			var dayofbirthinput = document.getElementById('DayOfBirth').value;
 			var monthinput = document.getElementById("MonthOfBirth").value - 1;
 			var yearinput = document.getElementById ("YearOfBirth").value;
+			
 				alert("Confirm You were born on the " + dayofbirthinput + "of month "+ monthinput);
 				
 				CheckDay();
 				CheckMonth();
+				CheckGender();
 				//Assign a variable to a function in order to store the function's return value
-				var datedetails = Main();
-				document.write(datedetails);
-		
+				var daynumber = Main();
+				alert(daynumber);
+				var AkanName=DayName();
+				alert(AkanName)
 				function CheckDay()
 				{
 					var dayofbirthinput = document.getElementById("DayOfBirth").value;
@@ -47,6 +50,17 @@
 							}
 
 				}
+				
+				function CheckGender()
+				{
+				var gender = document.getElementById("Gender").value;
+				alert(gender);
+				return gender;
+				
+				
+				
+				
+				}
 
 				function Main()
 				{
@@ -56,9 +70,59 @@
 					FullDate.setMonth(monthinput);
 					FullDate.setFullYear(yearinput);
 					alert (FullDate);
-					return FullDate;
+					DayNumber = FullDate.getDay();
+					alert(DayNumber);
+					return DayNumber;
 				}
 				
+				function DayName()
+				{
+				var DayOfBirth= daynumber;
+				var WeekDays= ["Sunday" ,"Monday", "Tuesday", "Wednesday", "Thursday", "Friday" ,"Saturday"];
+				var AkanName;
+					if (DayOfBirth==0)
+						{
+							WeekDays=[0];
+							var name="Kwasi";
+							return name;
+						}
+					if (DayOfBirth==1)
+						{
+							WeekDays=[1];
+							var name="Kwadwo";
+							return name;
+						}	
+					if (DayOfBirth==2)
+						{
+							WeekDays=[2];
+							var name = "Kwabena";
+							return name;
+						}
+					if (DayOfBirth==3)
+						{
+							WeekDays=[3];
+							var name= "Kwaku";
+							return name;
+						}	
+					if (DayOfBirth==4)
+						{
+							WeekDays=[4];
+							var name="Yaw";
+							return name;
+						}
+					if (DayOfBirth==5)
+						{
+							WeekDays=[5];
+							var name= "Kofi";
+							return name;
+						}	
+					if (DayOfBirth==6)
+						{
+							WeekDays=[6];
+							var name= "Kwame";
+							return name;
+						}
+				}	
 		}		
 				
 				
@@ -87,9 +151,9 @@
 			
 			<div class="userinput1">
 				<form>
-					<p> You Are a <select id "Gender">
-					<option value="Male"> Male </option>
-					<option value="Female"> Female </option>
+					<p> You Are a <select id= "Gender">>
+						<option value="Male"> Male </option>
+						<option value="Female"> Female </option>
 					</select>
 				
 				<p> What Day Were You Born On? <input type="year" id="DayOfBirth" name="dayofbirthinput" size= "5" > </input>
@@ -103,7 +167,7 @@
 				<BR>
 				<!-- Calling a JavaScript function when a button is pressed: use "button onclick="[FunctionName]" with an appropriately named fuction in the-->
 				<!-- <script></script> section that contains your JavaScript code -->
-				<button type="button" button onclick ="BirthDay()" id="Submit1" name="SubmitButton1" size ="10"> Try </button>
+				<button type="button"  button onClick="BirthDay()" id="Submit1" name="SubmitButton1" size ="10" > Try </button>
 				
 				
 				
