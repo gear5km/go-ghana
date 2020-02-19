@@ -3,6 +3,8 @@ Website that takes your birthday and turns it into an Akan first name
 
 deployed on: [Go Ghana Website ]( https://gear5km.github.io/go-ghana/)
 
+URL: https://gear5km.github.io/go-ghana/
+
 Author: Kimani Mbatia
 
 Description: This Website gives the user an Akan name based on their day of birth. 
