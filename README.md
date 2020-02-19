@@ -12,7 +12,7 @@ written in JavaScript.
 
 BirthDay() function is executed when the user clicks the "Try" button in the html page and stores the initial userinput.
 
-The CheckDay() and CheckMonth() functions look ensure valid user input. The CheckGender() function is for Development purposes as well as to assign a value to users gender. 
+The CheckDay() and CheckMonth() functions look to ensure valid user input. The CheckGender() function is for Development purposes as well as to assign a value to users gender (Male=1 and Female=2). 
 
 The Main() function converts user date of birth input into a JavaScript Date, returning a daynumber (0-6 for Sunday to Saturday). the DayName() function checks if the gender value is 0 or 1 in an if statement and then runs the following code for males (1) or females (2) by taking the "daynumber" return value and assigning a name based on the value e.g 0=Sunday=Kwasi.
 
