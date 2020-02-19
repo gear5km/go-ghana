@@ -27,3 +27,35 @@
 	
 	
 }
+
+.userinput1
+{
+	padding: 15px;
+	margin-left: 30%;
+	margin-right: 30%;
+	font-family: 'Ubuntu', sans-serif; 
+	font-size:12px;
+	border: solid black 2px;
+	
+	
+	
+}
+
+.NameOutput1
+{	
+	background-image: url(namebackground.jpg);
+	background-size: 100% 100%;
+	padding: 25px;
+	margin-left: 25%;
+	margin-right: 25%;
+	font-size: 45;
+	font-family: 'Poppins', sans-serif;
+	color: red;
+	text-align: center;
+	
+	
+	
+	
+	
+	
+}
