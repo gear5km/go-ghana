@@ -1,4 +1,4 @@
-# go-ghana
+# Children Of the Akan
 Website that takes your birthday and turns it into an Akan first name
 
 Reworked for April 2020 Prep session
