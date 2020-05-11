@@ -1,3 +1,6 @@
+//REWORKED VERSION FOR April Prep session
+
+
 //You Can Name a function by : "function [FunctionName](){}" 
 //To autoindent in Visual Studio Code press Ctrl+Alt+F
 function BirthDay() {

@@ -1,9 +1,7 @@
-
+/*Reworked Version*/
 .backgroundimage
 {
 	background-image: url("ghanabackground.jpg");
-	background-image-size: cover;
-	background-image-opacity: 0.8;
 	top: 0;
 	left: 0;
 	bottom: 0;
