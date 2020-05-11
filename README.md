@@ -1,8 +1,6 @@
 # Children Of the Akan
 Website that takes your birthday and turns it into an Akan first name
 
-Reworked for April 2020 Prep session
-
 deployed on: [Go Ghana Website ]( https://gear5km.github.io/go-ghana/)
 
 URL: https://gear5km.github.io/go-ghana/
